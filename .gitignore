@@ -1,0 +1,16 @@
+.DS_STORE
+node_modules
+bin
+.idea
+.vscode
+TMP
+config
+resources
+src
+logs
+.babelrc
+.eslintrc
+.eslintignore
+app.json
+package*.json
+webpack.config.js
