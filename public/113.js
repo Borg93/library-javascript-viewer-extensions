@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[113],{912:function(e,i,a){"use strict";a.r(i);var n=a(2),s=a.n(n);i.default=function e(i,a){s()(this,e);var n=a.imageList.map(function(e){return new THREE.MeshBasicMaterial({map:THREE.ImageUtils.loadTexture(e),side:THREE.BackSide})}),t=new THREE.MeshFaceMaterial(n),E=new THREE.CubeGeometry(a.size.x,a.size.y,a.size.z,1,1,1,null,!0),c=new THREE.Mesh(E,t);i.impl.scene.add(c)}}}]);
+//# sourceMappingURL=113.js.map
