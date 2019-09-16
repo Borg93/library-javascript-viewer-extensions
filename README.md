@@ -31,11 +31,6 @@ A curated collection of various JavaScript extensions for the viewer, showing wh
 
 - Browse to http://localhost:3000 to view the application
 
-### References
-
-//TODO: instructions to add model/extension to plain static json files
-
-
 ### Known Limitations
 
 - All data is readonly since there's no live database connected.
@@ -210,7 +205,30 @@ By default, right after **install**, the build script should will run automatica
 
 ## Tips and Tricks
 
-//TODO
+> Is there a way to add my own models
+
+To add models to the home page simply add a new object to `rcdb.models` in your `data/default.json` and to `configurator.models` for the `Demo` page following the schema below:
+
+```
+"_id": "Model GUID - can use https://guidgenerator.com to generate",
+"id": "Model GUID - can use https://guidgenerator.com to generate",
+"name": "Model name goes here",
+"env": "Local",
+"desc": "Description goes here",
+"layout": {
+  "type": "flexLayoutRight",
+  "rightFlex": 0.3
+},
+"model": {
+  "path": "path/to/svf",
+  "name": "Model name goes here",
+  "role": "3d"
+  //...other model load options if any
+},
+"dynamicExtensions": [
+//Extensions to load
+]
+```
 
 ## Written by
 

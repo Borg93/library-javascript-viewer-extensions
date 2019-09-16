@@ -5,9 +5,10 @@ bin
 .vscode
 TMP
 config
-resources
 src
 logs
+resources
+!public/resources
 .babelrc
 .eslintrc
 .eslintignore
